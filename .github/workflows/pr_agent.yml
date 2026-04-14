@@ -31,3 +31,4 @@ jobs:
           GITHUB_ACTION_CONFIG.AUTO_REVIEW: "true"
           CONFIG.DUPLICATE_EXAMPLES: "true"
           CONFIG.CUSTOM_MODEL_MAX_TOKENS: "8192" # Поднимите до 8к минимум
+          LITELLM_LOG: "DEBUG"
