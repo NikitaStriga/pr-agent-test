@@ -33,7 +33,7 @@ jobs:
           CONFIG.CUSTOM_MODEL_MAX_TOKENS: "8192" # Поднимите до 8к минимум
           LITELLM_LOG: "DEBUG"
           # Включение дебага
-          LOG_LEVEL: "DEBUG
+          LOG_LEVEL: "DEBUG"
           LITELLM_REQUEST_TIMEOUT: "600" # Тайм-аут в секундах (например, 10 минут)
           # Или через конфиг PR-Agent
           CONFIG.LITELLM.REQUEST_TIMEOUT: "600"
