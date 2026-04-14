@@ -9,5 +9,9 @@ public class Main
 		List<Integer> list = List.of(25, 26, 27);
 		list.add(25);
 		System.out.println(list);
+		System.out.println(list);
+		System.out.println(list);
+		System.out.println(list);
+		System.out.println(list);
 	}
 }
