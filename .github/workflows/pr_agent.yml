@@ -7,12 +7,19 @@ on:
 jobs:
   pr_agent_job:
     runs-on: ubuntu-latest
+    permissions: # Важно для записи комментариев
+      pull-requests: write
+      issues: write
+      contents: read
     name: Run PR Agent
     steps:
       - name: PR Agent action
         uses: Codium-ai/pr-agent@main
         env:
+          # Для Ollama ключ обычно не нужен, но LiteLLM может требовать любую строку
           OPENAI_KEY: "ollama"
-          OPENAI_BASE_URL: "https://mill.serveousercontent.com/v1"
-          CONFIG.MODEL: "qwen2.5-coder:1.5b"
+          # Прямое указание базы именно для Ollama
+          OLLAMA.API_BASE: "https://mill.serveousercontent.com"
+          # Обязательный префикс 'ollama/' перед названием модели
+          CONFIG.MODEL: "ollama/qwen2.5-coder:1.5b"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
