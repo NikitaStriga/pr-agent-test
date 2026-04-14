@@ -13,5 +13,5 @@ jobs:
         uses: Codium-ai/pr-agent@main
         env:
           OPENAI_KEY: "ollama"
-          OPENAI_BASE_URL: "https://mil.serveousercontent.com/"
+          OPENAI_BASE_URL: "https://mill.serveousercontent.com"
           CONFIG.MODEL: "qwen2.5-coder:1.5b"
