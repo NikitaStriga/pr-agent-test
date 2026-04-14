@@ -13,5 +13,9 @@ public class Main
 		System.out.println(list);
 		System.out.println(list);
 		System.out.println(list);
+		System.out.println(list);
+		System.out.println(list);
+		System.out.println(list);
+		System.out.println(list);
 	}
 }
