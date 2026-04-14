@@ -13,6 +13,6 @@ jobs:
         uses: Codium-ai/pr-agent@main
         env:
           OPENAI_KEY: "ollama"
-          OPENAI_BASE_URL: "https://mill.serveousercontent.com"
+          OPENAI_BASE_URL: "https://mill.serveousercontent.com/v1"
           CONFIG.MODEL: "qwen2.5-coder:1.5b"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
