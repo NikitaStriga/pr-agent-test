@@ -37,3 +37,7 @@ jobs:
           LITELLM_REQUEST_TIMEOUT: "600" # Тайм-аут в секундах (например, 10 минут)
           # Или через конфиг PR-Agent
           CONFIG.LITELLM.REQUEST_TIMEOUT: "600"
+          # --- ДОБАВИТЬ ЭТИ СТРОКИ ---
+          CONFIG.AI_TIMEOUT: "600"
+          CONFIG.LITELLM.PARAMS.TIMEOUT: "600"
+          # ---------------------------
