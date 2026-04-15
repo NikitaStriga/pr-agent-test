@@ -19,10 +19,10 @@ jobs:
           # Для Ollama ключ обычно не нужен, но LiteLLM может требовать любую строку
           OPENAI_KEY: "ollama"
           # Прямое указание базы именно для Ollama
-          OLLAMA.API_BASE: "https://mill.serveousercontent.com"
-          OLLAMA__API_BASE: "https://mill.serveousercontent.com"
+          OLLAMA.API_BASE: "https://mil.serveousercontent.com"
+          OLLAMA__API_BASE: "https://mil.serveousercontent.com"
           # Обязательный префикс 'ollama/' перед названием модели
-          CONFIG.MODEL: "ollama/qwen2.5-coder:1.5b"
+          CONFIG.MODEL: "ollama/qwen-32k"
           CONFIG.FALLBACK_MODELS: "[]"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Включает автоматическое описание при пуше новых коммитов
@@ -30,7 +30,7 @@ jobs:
           # Включает автоматическое ревью при пуше новых коммитов
           GITHUB_ACTION_CONFIG.AUTO_REVIEW: "true"
           CONFIG.DUPLICATE_EXAMPLES: "true"
-          CONFIG.CUSTOM_MODEL_MAX_TOKENS: "8192" # Поднимите до 8к минимум
+          CONFIG.CUSTOM_MODEL_MAX_TOKENS: "32768" # Поднимите до 8к минимум
           LITELLM_LOG: "DEBUG"
           # Включение дебага
           LOG_LEVEL: "DEBUG"
