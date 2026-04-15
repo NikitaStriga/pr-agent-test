@@ -41,3 +41,7 @@ jobs:
           CONFIG.AI_TIMEOUT: "600"
           CONFIG.LITELLM.PARAMS.TIMEOUT: "600"
           # ---------------------------
+          CONFIG.LITELLM.PARAMS.STREAM: "true"
+          CONFIG__AI_TIMEOUT: "600"
+          CONFIG__LITELLM__PARAMS__TIMEOUT: "600"
+          CONFIG__LITELLM__PARAMS__STREAM: "true"
