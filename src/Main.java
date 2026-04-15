@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 
 public class Main
@@ -16,5 +17,9 @@ public class Main
 		dp.items.add("cherry");
 
 		dp.process();
+
+
+		Set<Integer> integers = Set.of(1, 2, 34);
+		integers.add(25);
 	}
 }
