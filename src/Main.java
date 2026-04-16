@@ -8,6 +8,8 @@ public class Main
 		System.out.println("Hello world!");
 		List<Integer> list = List.of(25, 26, 27);
 		list.add(25);
+		list.add(25);
+		list.add(25);
 		System.out.println(list);
 	}
 }
